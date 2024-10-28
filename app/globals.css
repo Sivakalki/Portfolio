@@ -1,22 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oxanium:wght@200..800&display=swap');
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
+html,body {
+  font-family: "Kanit", serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,10 +17,316 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  overflow-x: hidden;
+}
+
+* {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+.font-kanit {
+  font-family: 'Kanit', sans-serif !important;
+}
+.font-kanit-light{
+  font-weight:lighter;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.background{
+  background-color: hsl(0, 0%, 10%);
+  color: white;
+}
+
+.box{
+  background-color: #2b2b2b;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.name{
+  font-size: 6rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  /* padding-left: 5vw; */
+  color: transparent;
+  margin-top:-10vh;
+  background: linear-gradient(to bottom, white 50%, #e789ad 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: relative;
+  background-size: 100% 200%; /* Double the height to allow movement */
+  background-position: top; /* Start the gradient at the top */
+  animation: slide-gradient 2s ease-in forwards;
+  z-index: +1;
+}
+
+.box2{
+  background-color: #e789ad;
+  mix-blend-mode: darken;
+  margin-top: -20vh;
+  z-index: 1;
+}
+
+.box3{
+  background-color: #1f1f1f;
+  color: white;
+  border-radius: 10px;
+
+}
+.box4{
+  background-color: #1f1f1f;
+  color: white;
+  border-radius: 10px;
+}
+
+.exp{
+  background-color: hsl(0, 0%, 10%);
+  width: 24vw;
+  border-radius: 10px;
+  height: 10vh;
+}
+
+@layer utilities {
+  @keyframes slide-gradient {
+    0% {
+      background-position: top; /* Start with the pink at the bottom */
+    }
+    100% {
+      background-position: 50%; /* End with the pink halfway up */
+    }
+  }
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-down{
+    0%{
+      transform: translateY(-20%);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.animate-slide-down{
+  animation: slide-down 1s ease-in forwards;
+}
+
+.dept{
+  font-size: 1.5rem;
+  font-family: "Kanit", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.connect{
+  border: 2px solid white;
+  border-radius: 30px;
+  
+}
+
+.about_name{
+  width:  130rem;
+  font-size: 2.5rem;
+}
+
+.experience_heading{
+  font-size: 2rem;
+}
+
+.about_summary{
+  font-size: 1.2rem;
+  margin-left: 20px;
+}
+
+/* Container for the scrolling effect */
+.project-container {
+  overflow: hidden;
+  position: relative;
+  width: 80vw; /* Full width of the viewport */
+}
+
+/* The wrapper that holds the scrolling content */
+.project-list-wrapper {
+  display: flex;
+  overflow-x: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent line breaks */
+  position: relative;
+  overflow-y: hidden;
+}
+
+/* Single project list, which will be repeated */
+.project-list {
+  display: inline-flex;
+  flex-shrink: 0;
+  gap: 20px; 
+}
+
+/* Keyframes for horizontal scrolling */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Move left by 100% of the wrapper width */
+  }
+}
+
+/* Individual project cards */
+.project-card {
+  width: 250px;
+  height: 250px;
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  padding: 16px; /* Adjust spacing between projects */
+}
+
+.view_all{
+  border: 2px solid white;
+  margin-left: 68vw;
+  width: 170px;
+  padding-left: 5px;
+  padding-right: 10px;
+  border-radius: 20px ;
+  height: 45px;
+}
+
+.GetInTouch{
+  margin-bottom: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.GetInTouch h1{
+  font-size: 2rem;
+  /* border: 2px solid #e789ad; */
+  color:white;
+  /* border-radius: 50px; */
+  padding: 10px;
+}
+.GetInTouch .links .list1,.list2{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  /* border: 2px solid #e789ad; */
+  /* width: 50px; */
+  /* margin-left: -30px; */
+}
+.GetInTouch .links{
+  display: flex;
+  width: 36vw;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-left: -20px;
+}
+
+.GetInTouch .links .list1 .links{
+    width: 11vw;
+    font-size: 1rem;
+    border-radius: 15px;
+    border: 2px solid white;
+    padding-right: 15px;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  .GetInTouch .links .list2 .links{
+    width: 11vw;
+    font-size: 1rem;
+    border-radius: 15px;
+    border: 2px solid white;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+  
+  .GetInTouch .name{
+    font-size: 6rem;
+    /* padding-left: 5vw; */
+    color: transparent;
+    margin-top:-10vh;
+    background: linear-gradient(to bottom, white 50%, #e789ad 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: relative;
+  background-size: 100% 200%; /* Double the height to allow movement */
+  background-position: top; /* Start the gradient at the top */
+  animation: slide-gradient 3s ease-in forwards;
+  z-index: +1;
+}
+
+
+
+.navbar_components{
+  margin-left: 50vw;
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+  margin-right: 9vw;
+  font-size: 1.2rem;
+  justify-content: space-between;
+}
+
+.navbar_components .item{
+  /* cursor: pointer; */
+  position: relative;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.item::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff7300;
+  transition:color 0.3s ease,width 0.1s ease;
+}
+
+
+.item:hover {
+  color: #ff7300;;
+} 
+
+.active{
+  color: #ff7300 !important;
+}
+
+.active::after {
+  width: 100%; 
+  color:#ff7300;
+}
+
+.main_nav{
+  background-color: #0f0e0e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-family: "Kanit", serif;;
 }

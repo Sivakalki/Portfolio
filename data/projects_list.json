@@ -1,0 +1,41 @@
+
+{
+    "projects":{
+        "project1":{
+            "name":"Chat Application",
+            "image":"images/ChatApplication.png",
+            "dept":"FullStack",
+            "link":"link",
+            "description": "Loremasf fjadsif a;akas fakfla adslkjfskfj aslfajf asfsjfl a;slfjek fasjfldlfjaslfalfdofaTHios is mithun and ecplaining about the project asfl;jsdlkf asl fladsjf las fasjl falfjd asklfnas,dm fkaskf,ae jf;adslf jaosjf la"
+        },
+        "project2":{
+            "name":"Honors/Minors Website",
+            "image":"images/project_ss.png",
+            "dept":"FullStack",
+            "link":"link",
+            "description": "Loremasf fjadsif a;ajf asfsjfl a;slfjek fasjfldlfjaslfalfdofaTHios is mithun and ecplaining about the project asfl;jsdlkf asl fladsjf las fasjl falfjd asklfnas,dm fkaskf,ae jf;adslf jaosjf la"
+        },
+        "project3":{
+            "name":"E Ticketing",
+            "image":"images/Eticketing.png",
+            "dept":"FullStack",
+            "link":"link",
+            "description": "Loremasf fjadsif a;ajf asfsjfl a;slfjek fasjfldlfjaslfalfdofaTHios is mithun and ecplaining about the project asfl;jsdlkf asl fladsjf las fasjl falfjd asklfnas,dm fkaskf,ae jf;adslf jaosjf la"
+        },
+        "project4":{
+            "name":"Tiny C Compiler",
+            "image":"images/project_ss.png",
+            "dept":"Programming Language Compiler",
+            "link":"link",
+            "description": "Loremasf fjadsif a;ajf asfsjfl a;slfjek fasjfldlfjaslfalfdofaTHios is mithun and ecplaining about the project asfl;jsdlkf asl fladsjf las fasjl falfjd asklfnas,dm fkaskf,ae jf;adslf jaosjf la"
+        },
+        "project5":{
+            "name":"CV Maker",
+            "image":"images/project_ss.png",
+            "dept":"FullStack",
+            "link":"link",
+            "description": "Loremasf fjadsif a;ajf asfsjfl a;slfjek fasjfldlfjaslfalfdofaTHios is mithun and ecplaining about the project asfl;jsdlkf asl fladsjf las fasjl falfjd asklfnas,dm fkaskf,ae jf;adslf jaosjf la"
+        }
+    }
+
+}
