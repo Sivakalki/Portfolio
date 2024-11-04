@@ -160,9 +160,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-        <div className="mt-8 flex justify-end view_all">
+        {/* <div className="mt-8 flex justify-end view_all">
           <button onClick={() => router.push('/projects')}>View All Projects <ArrowRightOutlined /></button>
-        </div>
+        </div> */}
       </div>
       <div className="GetInTouch font-kanit mt-96  " id="contact">
         <h1 className="name ">GET IN TOUCH</h1>
