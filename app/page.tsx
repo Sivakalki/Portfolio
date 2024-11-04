@@ -13,7 +13,7 @@ export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const projectListRef = useRef<HTMLDivElement>(null);
   // console.log(projects, " is the project details");
-  const about_me = "Hi I am xxxxxx . i am a full stack developer"
+  const about_me = "Hi I am Siva Kalki . i am a full stack developer"
   const description = "I provide a strong background in frontend and backend development as a committed and talented Full Stack Developer. I am also good at coding, which helps to solve complex problems quickly.I am dedicated to keeping up with the most recent technological advancements and thrive in collaborative settings."
   const about_me_chars = about_me.split('');
   const description_chars = description.split('');
@@ -53,7 +53,7 @@ export default function Home() {
     return () => clearInterval(interval); // Clean up on unmount
   }, []);
   const handleCopyEmail=()=>{
-    navigator.clipboard.writeText("your-email@example.com");
+    navigator.clipboard.writeText("sivakalkipusarla6.com");
     alert("Email copied to clipboard!");
   }
   const handleLinkNavigation=(url:any)=>{
@@ -171,7 +171,7 @@ export default function Home() {
             <button className="links" onClick={handleCopyEmail}>Mail Id <MailOutlined /></button>
             <button
               className="links"
-              onClick={() => handleLinkNavigation("https://linkedin.com/in/your-profile")}
+              onClick={() => handleLinkNavigation("https://linkedin.com/in/kalki-siva")}
             >
               LinkedIn <LinkedinOutlined />
             </button>
@@ -179,13 +179,13 @@ export default function Home() {
           <div className="list2">
             <button
               className="links"
-              onClick={() => handleLinkNavigation("https://github.com/your-username")}
+              onClick={() => handleLinkNavigation("https://github.com/Sivakalki")}
             >
               GitHub <GithubOutlined />
             </button>
             <button
               className="links"
-              onClick={() => handleLinkNavigation("https://twitter.com/your-username")}
+              onClick={() => handleLinkNavigation("https://x.com/PusarlaSiv67661?t=B1HtQWs-PSCfrMFJxWHXog&s=09")}
             >
               X (Twitter) <TwitterOutlined />
             </button>
