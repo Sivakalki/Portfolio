@@ -97,7 +97,7 @@ export default function Home() {
             className="exp"
             id="1"
             style={{ position: 'relative' }}>
-            <button className="mt-5 ml-3"><CaretRightOutlined />    GA Digital Technologies</button>
+            <button className="mt-5 ml-3"><CaretRightOutlined />    GA Digital Solutions</button>
           </motion.div>
           <motion.div
             whileHover={{ x: -10 }} // Moves the button right by 10px
